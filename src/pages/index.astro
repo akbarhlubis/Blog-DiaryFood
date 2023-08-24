@@ -1,7 +1,7 @@
 ---
 const name = "Rini Kustiani";
 const hobby = "Baca Buku";
-const umur = 20 + 20;
+const umur = 20 + 10;
 ---
 
 <html lang="en">
@@ -13,7 +13,28 @@ const umur = 20 + 20;
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
-		<p>haiii namaku {name} hobbyku {hobby} umurku {umur}</p>
+		<!-- Header Start -->
+		<header class="flex justify-between p-10">
+			<img src="/Logo.png" alt="gambar">
+			<div class="navbar text-slate-500 flex gap-10">
+				<div class="hover:text-orange-500 hover:underline hover:font-medium">Beranda</div>
+				<div class="hover:text-orange-500 hover:underline hover:font-medium">Blog</div> 
+				<div class="hover:text-orange-500 hover:underline hover:font-medium">Resep</div>
+				<div class="hover:text-orange-500 hover:underline hover:font-medium">Tentang Kami</div>
+			</div>
+		</header>
+		<!-- Header End -->
+
+		<!-- Hero Start -->
+		<div class="hero">
+			<div class="leftHero">
+				<h1>Bagikan Pengalaman Makan dan Resepmu di Sini!</h1>
+				<p>Ingin berbagi pengalaman makan atau resep makanan yang kamu sukai? Ayo bagikan kelezatan makananmu dengan para pengunjung lainnya!</p>
+			</div>
+			<div class="rightHero">
+				<img src="/Hero_image.png" alt="gambar hero">
+			</div>
+		</div>
+		<!-- Hero End -->
 	</body>
 </html>
