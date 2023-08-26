@@ -11,6 +11,12 @@ const umur = 20 + 10;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<style>
+			/* line debugging css
+			* {
+				outline: 1px solid #ff000080;
+			} */
+		</style>
 	</head>
 	<body>
 		<!-- Header Start -->
@@ -26,13 +32,21 @@ const umur = 20 + 10;
 		<!-- Header End -->
 
 		<!-- Hero Start -->
-		<div class="hero">
+		<div class="hero flex justify-between p-10 items-center">
 			<div class="leftHero">
-				<h1>Bagikan Pengalaman Makan dan Resepmu di Sini!</h1>
-				<p>Ingin berbagi pengalaman makan atau resep makanan yang kamu sukai? Ayo bagikan kelezatan makananmu dengan para pengunjung lainnya!</p>
+				<h1 class="text-4xl w-3/5 pb-2 text-slate-800 font-semibold"> Bagikan <span class="text-orange-500">Pengalaman Makan</span> dan <span class="text-orange-500">Resepmu</span> di Sini!</h1>
+				<p class="text-slate-500 pb-2 leading-relaxed text-xs w-3/5">Ingin berbagi pengalaman makan atau resep makanan yang kamu sukai? Ayo bagikan kelezatan makananmu dengan para pengunjung lainnya!</p>
+				<div class="flex gap-4">
+					<div class="bg-slate-950 text-white w-fit rounded-2xl text-sm px-3 py-2">
+						Bagikan Sekarang!
+					</div>
+					<div class="bg-white text-black w-fit rounded-2xl text-sm px-3 py-2 outline outline-1 outline-black">
+						Telusuri Blog >>
+					</div>
+				</div>
 			</div>
 			<div class="rightHero">
-				<img src="/Hero_image.png" alt="gambar hero">
+				<img class="w-96" src="/Hero_Image.png" alt="gambar hero">
 			</div>
 		</div>
 		<!-- Hero End -->

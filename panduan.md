@@ -19,4 +19,5 @@
 - Resep
 - Footer
 
-# Analogi 
+# Gambaran
+![Tux, the Linux mascot](/LandingPage.jpg) 
