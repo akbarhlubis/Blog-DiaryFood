@@ -1,0 +1,35 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<style>
+			/* line debugging css
+			* {
+				outline: 1px solid #ff000080;
+			} */
+		</style>
+	</head>
+	<body>
+		<!-- Header Start -->
+		<header class="flex justify-between p-10">
+			<img src="/Logo.png" alt="gambar">
+			<div class="navbar text-slate-500 flex gap-10">
+				<a class="hover:text-orange-500 hover:underline hover:font-medium" href="/">Beranda</a>
+				<a class="hover:text-orange-500 hover:underline hover:font-medium" href="#">Blog</a>
+				<a class="hover:text-orange-500 hover:underline hover:font-medium" href="#">Resep</a>
+				<a class="hover:text-orange-500 hover:underline hover:font-medium" href="/about">Tentang Kami</a>
+			</div>
+		</header>
+		<!-- Header End -->
+        
+        <slot/>
+
+	</body>
+</html>

@@ -1,77 +1,51 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
+
 const name = "Rini Kustiani";
 const hobby = "Baca Buku";
 const umur = 20 + 10;
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-		<style>
-			/* line debugging css
-			* {
-				outline: 1px solid #ff000080;
-			} */
-		</style>
-	</head>
-	<body>
-		<!-- Header Start -->
-		<header class="flex justify-between p-10">
-			<img src="/Logo.png" alt="gambar">
-			<div class="navbar text-slate-500 flex gap-10">
-				<div class="hover:text-orange-500 hover:underline hover:font-medium">Beranda</div>
-				<div class="hover:text-orange-500 hover:underline hover:font-medium">Blog</div> 
-				<div class="hover:text-orange-500 hover:underline hover:font-medium">Resep</div>
-				<div class="hover:text-orange-500 hover:underline hover:font-medium">Tentang Kami</div>
-			</div>
-		</header>
-		<!-- Header End -->
-
-		<!-- Hero Start -->
-		<div class="hero flex justify-between p-10 items-center">
-			<div class="leftHero">
-				<h1 class="text-4xl w-3/5 pb-2 text-slate-800 font-semibold"> Bagikan <span class="text-orange-500">Pengalaman Makan</span> dan <span class="text-orange-500">Resepmu</span> di Sini!</h1>
-				<p class="text-slate-500 pb-2 leading-relaxed text-xs w-3/5">Ingin berbagi pengalaman makan atau resep makanan yang kamu sukai? Ayo bagikan kelezatan makananmu dengan para pengunjung lainnya!</p>
-				<div class="flex gap-4">
-					<div class="bg-slate-950 text-white w-fit rounded-2xl text-sm px-3 py-2">
-						Bagikan Sekarang!
-					</div>
-					<div class="bg-white text-black w-fit rounded-2xl text-sm px-3 py-2 outline outline-1 outline-black">
-						Telusuri Blog >>
-					</div>
+<MainLayout>
+	<!-- Hero Start -->
+	<div class="hero flex justify-between p-10 items-center">
+		<div class="leftHero">
+			<h1 class="text-4xl w-3/5 pb-2 text-slate-800 font-semibold"> Bagikan <span class="text-orange-500">Pengalaman Makan</span> dan <span class="text-orange-500">Resepmu</span> di Sini!</h1>
+			<p class="text-slate-500 pb-2 leading-relaxed text-xs w-3/5">Ingin berbagi pengalaman makan atau resep makanan yang kamu sukai? Ayo bagikan kelezatan makananmu dengan para pengunjung lainnya!</p>
+			<div class="flex gap-4">
+				<div class="bg-slate-950 text-white w-fit rounded-2xl text-sm px-3 py-2">
+					Bagikan Sekarang!
 				</div>
-			</div>
-			<div class="rightHero">
-				<img class="w-96" src="/Hero_Image.png" alt="gambar hero">
-			</div>
-		</div>
-		<!-- Hero End -->
-
-		<!-- keunggulan star -->
-		<div class="flex bg-yellow-100 flex-col items-center p-10">
-			<h1 class="text-3xl font-medium">Disini tempatnya Food Enthusiast saling berbagi rasa!</h1>
-			<div class="flex mt-10">
-				<div class="flex flex-col gap-3 items-center">
-					<img class="w-6/12" src="/Gambar Jus.png" alt="gambar minuman">
-					<h2 class="text-3xl font-medium">Mudah!</h2>
-					<p class="text-gray-500 font-medium text-sm">Mudah mencari dan membuat artikel</p>
-				</div>
-				<div class="flex flex-col gap-3 items-center">
-					<img class="w-6/12" src="/Gambar Makanan.png" alt="gambar makanan">
-					<h2 class="text-3xl font-medium">Beragam!</h2>
-					<p class="text-gray-500 font-medium text-sm">Banyak pilihan artikel yang disediakan</p>
-				</div>
-				<div class="flex flex-col gap-3 items-center">
-					<img class="w-6/12" src="/Gambar Sandwich.png" alt="gambar sandwich">
-					<h2 class="text-3xl font-medium">Menarik!</h2>
-					<p class="text-gray-500 font-medium text-sm">Banyak pilihan artikel menarik</p>
+				<div class="bg-white text-black w-fit rounded-2xl text-sm px-3 py-2 outline outline-1 outline-black">
+					Telusuri Blog >>
 				</div>
 			</div>
 		</div>
-		<!-- keunggulan end -->
-	</body>
-</html>
+		<div class="rightHero">
+			<img class="w-96" src="/Hero_Image.png" alt="gambar hero">
+		</div>
+	</div>
+	<!-- Hero End -->
+
+	<!-- keunggulan star -->
+	<div class="flex bg-yellow-100 flex-col items-center p-10">
+		<h1 class="text-3xl font-medium">Disini tempatnya Food Enthusiast saling berbagi rasa!</h1>
+		<div class="flex mt-10">
+			<div class="flex flex-col gap-3 items-center">
+				<img class="w-6/12" src="/Gambar Jus.png" alt="gambar minuman">
+				<h2 class="text-3xl font-medium">Mudah!</h2>
+				<p class="text-gray-500 font-medium text-sm">Mudah mencari dan membuat artikel</p>
+			</div>
+			<div class="flex flex-col gap-3 items-center">
+				<img class="w-6/12" src="/Gambar Makanan.png" alt="gambar makanan">
+				<h2 class="text-3xl font-medium">Beragam!</h2>
+				<p class="text-gray-500 font-medium text-sm">Banyak pilihan artikel yang disediakan</p>
+			</div>
+			<div class="flex flex-col gap-3 items-center">
+				<img class="w-6/12" src="/Gambar Sandwich.png" alt="gambar sandwich">
+				<h2 class="text-3xl font-medium">Menarik!</h2>
+				<p class="text-gray-500 font-medium text-sm">Banyak pilihan artikel menarik</p>
+			</div>
+		</div>
+	</div>
+	<!-- keunggulan end -->
+</MainLayout>
