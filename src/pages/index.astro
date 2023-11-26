@@ -5,47 +5,59 @@ const name = "Rini Kustiani";
 const hobby = "Baca Buku";
 const umur = 20 + 10;
 ---
+<!-- <style>
+	* {
+		outline: 1px solid red;
+	}
+</style> -->
 <MainLayout>
 	<!-- Hero Start -->
-	<div class="hero flex justify-between p-10 items-center">
-		<div class="leftHero">
-			<h1 class="text-4xl w-3/5 pb-2 text-slate-800 font-semibold"> Bagikan <span class="text-orange-500">Pengalaman Makan</span> dan <span class="text-orange-500">Resepmu</span> di Sini!</h1>
-			<p class="text-slate-500 pb-2 leading-relaxed text-xs w-3/5">Ingin berbagi pengalaman makan atau resep makanan yang kamu sukai? Ayo bagikan kelezatan makananmu dengan para pengunjung lainnya!</p>
-			<div class="flex gap-4">
-				<div class="bg-slate-950 text-white w-fit rounded-2xl text-sm px-3 py-2">
-					Bagikan Sekarang!
-				</div>
-				<div class="bg-white text-black w-fit rounded-2xl text-sm px-3 py-2 outline outline-1 outline-black">
-					Telusuri Blog >>
+	<div class="container mx-auto px-12">
+		<div class="hero flex justify-evenly items-center min-h-screen align-middle">
+			<div class="leftHero w-full" data-aos="zoom-in-up" data-aos-delay="300">
+				<h1 class="text-5xl pb-2 w-full text-slate-800 font-semibold"> Bagikan <span class="text-orange-500">Pengalaman Makan</span> dan <span class="text-orange-500">Resepmu</span> di Sini!</h1>
+				<p class="text-slate-500 pb-2 leading-loose text-sm">Ingin berbagi pengalaman makan atau resep makanan yang kamu sukai? Ayo bagikan kelezatan makananmu dengan para pengunjung lainnya!</p>
+				<div class="flex gap-4">
+					<a href="#" class="bg-slate-950 text-white w-fit rounded-2xl text-sm px-3 py-2">
+						Telusuri Blog >>
+					</a>
 				</div>
 			</div>
-		</div>
-		<div class="rightHero">
-			<img class="w-96" src="/Hero_Image.png" alt="gambar hero">
+			<div class="rightHero">
+				<img class="w-full" data-aos="zoom-in-up" src="/Hero_Image.png" alt="gambar hero">
+				<img data-aos="zoom-out-right" class="absolute bottom-0 left-[45%]" src="/Gambar Cup Glowing.png" alt="">
+				<img data-aos="zoom-out-left" class="absolute bottom-10 left-[65%]" src="/Gambar Lampu Glowing.png" alt="">
+			</div>
 		</div>
 	</div>
 	<!-- Hero End -->
 
 	<!-- keunggulan star -->
 	<div class="flex bg-yellow-100 flex-col items-center p-10">
-		<h1 class="text-3xl font-medium">Disini tempatnya Food Enthusiast saling berbagi rasa!</h1>
-		<div class="flex mt-10">
-			<div class="flex flex-col gap-3 items-center">
-				<img class="w-6/12" src="/Gambar Jus.png" alt="gambar minuman">
+		<h1 class="text-3xl font-medium w-1/2 text-center">Disini tempatnya Food Enthusiast saling berbagi rasa!</h1>
+		<div class="flex mt-10 w-full items-end justify-evenly">
+			<div class="flex flex-col gap-3 items-center" data-aos="zoom-in-up">
+				<img data-tilt class="w-4/5 hover:scale-110 transition-all scale-90" src="/Gambar Jus.png" alt="gambar minuman">
 				<h2 class="text-3xl font-medium">Mudah!</h2>
 				<p class="text-gray-500 font-medium text-sm">Mudah mencari dan membuat artikel</p>
 			</div>
-			<div class="flex flex-col gap-3 items-center">
-				<img class="w-6/12" src="/Gambar Makanan.png" alt="gambar makanan">
+			<div class="flex flex-col gap-3 items-center" data-aos="zoom-in-up">
+				<img data-tilt class="w-4/5 hover:scale-110 transition-all scale-90" src="/Gambar Makanan.png" alt="gambar makanan">
 				<h2 class="text-3xl font-medium">Beragam!</h2>
 				<p class="text-gray-500 font-medium text-sm">Banyak pilihan artikel yang disediakan</p>
 			</div>
-			<div class="flex flex-col gap-3 items-center">
-				<img class="w-6/12" src="/Gambar Sandwich.png" alt="gambar sandwich">
+			<div class="flex flex-col gap-3 items-center" data-aos="zoom-in-up">
+				<img data-tilt class="w-4/5 hover:scale-110 transition-all scale-90" src="/Gambar Sandwich.png" alt="gambar sandwich">
 				<h2 class="text-3xl font-medium">Menarik!</h2>
 				<p class="text-gray-500 font-medium text-sm">Banyak pilihan artikel menarik</p>
 			</div>
 		</div>
 	</div>
 	<!-- keunggulan end -->
+	
+	<!-- Tulisan terbaru start -->
+	<div class="container mx-auto">
+		<h1 class="text-3xl font-medium text-center">Tulisan Terbaru</h1>
+	</div>
+	<!-- Tulisan terbaru end -->
 </MainLayout>
